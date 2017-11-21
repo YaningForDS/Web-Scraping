@@ -57,7 +57,7 @@ class ScienceDirect_crawl():
 			soup = BeautifulSoup(webpage,'html.parser')
 
 
-	def get_next_issue(self,text):
+	def get_next_issue(self, text):
 		try:
 			c = text.find('ul',class_ = 'volumePage navigation')
 			a = c.find_all("a")
